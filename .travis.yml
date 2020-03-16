@@ -25,7 +25,7 @@ node_js:
 cache: npm
 branches:
   only:
-    - master # build master branch only
+    - hexo # build master branch only
 script:
   - hexo generate # generate static files
 deploy:
@@ -34,6 +34,7 @@ deploy:
   github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
   local_dir: "./public"
-  target_branch: master
   on:
-    branch: master
+    # branch: master
+    tags: true
+    all_branches: true
