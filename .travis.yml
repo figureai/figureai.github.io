@@ -35,4 +35,4 @@ deploy:
   keep_history: true
   local_dir: ./public
   on:
-    branch: master
+    target_branch: master
