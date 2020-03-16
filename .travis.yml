@@ -15,5 +15,5 @@ deploy:
   keep-history: true
 on:
   all_branches: true # solve a permission problem
-  target_branch: master
+  # branch: master
   local-dir: public
