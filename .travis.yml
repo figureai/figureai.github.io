@@ -35,6 +35,4 @@ deploy:
   keep_history: true
   local_dir: "./public"
   on:
-    # branch: master
-    tags: true
-    all_branches: true
+    branch: master
