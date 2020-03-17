@@ -48,7 +48,7 @@ cache: npm
 
 branches:
   only:
-  - hexo # build hexo branch only
+    - hexo # build hexo branch only
 script:
   - hexo generate # generate static files
 deploy:
