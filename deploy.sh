@@ -1,5 +1,5 @@
 git add .
-git commit -m ""
+git commit -m "发布更新"
 git push
-# hexo g
-# hexo deploy
+hexo generate
+hexo deploy
