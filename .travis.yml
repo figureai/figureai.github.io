@@ -48,11 +48,11 @@ cache: npm
 
 branches:
   only:
-  - hexo # build hexo branch only
+    - hexo # build hexo branch only
 script:
   - hexo generate # generate static files
 deploy:
-  provider: pages
+  # provider: pages
   skip-cleanup: true
   github-token: $GH_TOKEN
   keep-history: true
