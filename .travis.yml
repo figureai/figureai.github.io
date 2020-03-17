@@ -28,11 +28,19 @@ branches:
     - hexo # build master branch only
 script:
   - hexo generate # generate static files
+# deploy:
+#   provider: pages
+#   skip_cleanup: true
+#   github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
+#   keep_history: true
+#   local_dir: "./public"
+#   on:
+#     branch: master
+  
 deploy:
   provider: pages
   skip_cleanup: true
   github_token: $GH_TOKEN  # Set in the settings page of your repository, as a secure variable
   keep_history: true
-  local_dir: "./public"
   on:
     branch: master
