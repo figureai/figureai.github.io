@@ -2,9 +2,72 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   
   <url>
+    <loc>http://yoursite.com/2020/03/17/404/</loc>
+    
+    <lastmod>2020-03-17T15:20:40.446Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/17/about/index/</loc>
+    
+    <lastmod>2020-03-17T15:20:40.446Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/17/books/index/</loc>
+    
+    <lastmod>2020-03-17T15:20:40.446Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/17/categories/index/</loc>
+    
+    <lastmod>2020-03-17T15:20:40.446Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/17/links/index/</loc>
+    
+    <lastmod>2020-03-17T15:20:40.446Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/17/repository/index/</loc>
+    
+    <lastmod>2020-03-17T15:20:40.446Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/17/tags/index/</loc>
+    
+    <lastmod>2020-03-17T15:20:40.446Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/17/test5/</loc>
+    
+    <lastmod>2020-03-17T15:17:07.937Z</lastmod>
+    
+  </url>
+  
+  <url>
+    <loc>http://yoursite.com/2020/03/17/test4/</loc>
+    
+    <lastmod>2020-03-17T15:17:03.775Z</lastmod>
+    
+  </url>
+  
+  <url>
     <loc>http://yoursite.com/2020/03/17/test3/</loc>
     
-    <lastmod>2020-03-17T14:51:55.042Z</lastmod>
+    <lastmod>2020-03-17T14:54:42.597Z</lastmod>
     
   </url>
   
@@ -40,55 +103,6 @@
     <loc>http://yoursite.com/js.html</loc>
     
     <lastmod>2020-03-16T10:57:16.319Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/404.html</loc>
-    
-    <lastmod>2019-08-02T02:17:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/books/index.html</loc>
-    
-    <lastmod>2019-08-02T02:17:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/about/index.html</loc>
-    
-    <lastmod>2019-08-02T02:17:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/categories/index.html</loc>
-    
-    <lastmod>2019-08-02T02:17:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/links/index.html</loc>
-    
-    <lastmod>2019-08-02T02:17:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/repository/index.html</loc>
-    
-    <lastmod>2019-08-02T02:17:12.000Z</lastmod>
-    
-  </url>
-  
-  <url>
-    <loc>http://yoursite.com/tags/index.html</loc>
-    
-    <lastmod>2019-08-02T02:17:12.000Z</lastmod>
     
   </url>
   

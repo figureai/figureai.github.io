@@ -1,6 +1,33 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://yoursite.com/2020/03/17//404/</loc>
+    <lastmod>2020-03-17</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/03/17/about/index/</loc>
+    <lastmod>2020-03-17</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/03/17/books/index/</loc>
+    <lastmod>2020-03-17</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/03/17/categories/index/</loc>
+    <lastmod>2020-03-17</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/03/17/links/index/</loc>
+    <lastmod>2020-03-17</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/03/17/repository/index/</loc>
+    <lastmod>2020-03-17</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/03/17/tags/index/</loc>
+    <lastmod>2020-03-17</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/03/17/test5/</loc>
+    <lastmod>2020-03-17</lastmod>
+  </url>  <url>
+    <loc>http://yoursite.com/2020/03/17/test4/</loc>
+    <lastmod>2020-03-17</lastmod>
+  </url>  <url>
     <loc>http://yoursite.com/2020/03/17/test3/</loc>
     <lastmod>2020-03-17</lastmod>
   </url>  <url>
