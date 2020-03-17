@@ -23,9 +23,9 @@ language: node_js
 node_js:
   - 12.9.0 # use nodejs v10 LTS
 cache: npm
-# branches:
-#   only:
-#     - hexo # build master branch only
+branches:
+  only:
+    - hexo # build master branch only
 script:
   - hexo generate # generate static files
 # deploy:
