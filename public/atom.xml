@@ -5,9 +5,9 @@
   
   <link href="/atom.xml" rel="self"/>
   
-  <link href="http://yoursite.com/"/>
-  <updated>2020-03-17T15:20:40.446Z</updated>
-  <id>http://yoursite.com/</id>
+  <link href="http://figuriai.github.io/"/>
+  <updated>2020-03-20T09:42:52.109Z</updated>
+  <id>http://figuriai.github.io/</id>
   
   <author>
     <name>Figure Ai</name>
@@ -17,277 +17,29 @@
   <generator uri="https://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>404 Not Found：该页无法显示</title>
-    <link href="http://yoursite.com/2020/03/17/404/"/>
-    <id>http://yoursite.com/2020/03/17/404/</id>
-    <published>2020-03-17T15:20:40.446Z</published>
-    <updated>2020-03-17T15:20:40.446Z</updated>
+    <title>正则表达式的使用</title>
+    <link href="http://figuriai.github.io/2020/03/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/"/>
+    <id>http://figuriai.github.io/2020/03/20/%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</id>
+    <published>2020-03-20T06:53:45.000Z</published>
+    <updated>2020-03-20T09:42:52.109Z</updated>
     
-    <content type="html"><![CDATA[<script type="text/javascript" src="//www.qq.com/404/search_children.js" charset="utf-8" homePageUrl="<%- config.url %>" homePageName="回到我的主页"></script>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;script type=&quot;text/javascript&quot; src=&quot;//www.qq.com/404/search_children.js&quot; charset=&quot;utf-8&quot; homePageUrl=&quot;&lt;%- config.url %&gt;&quot; homePageName=&quot;回到我的主
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>关于</title>
-    <link href="http://yoursite.com/2020/03/17/about/index/"/>
-    <id>http://yoursite.com/2020/03/17/about/index/</id>
-    <published>2020-03-17T15:20:40.446Z</published>
-    <updated>2020-03-17T15:20:40.446Z</updated>
-    
-    <content type="html"><![CDATA[<p>个人详细介绍</p>]]></content>
-    
-    <summary type="html">
-    
-      个人简介
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>书单</title>
-    <link href="http://yoursite.com/2020/03/17/books/index/"/>
-    <id>http://yoursite.com/2020/03/17/books/index/</id>
-    <published>2020-03-17T15:20:40.446Z</published>
-    <updated>2020-03-17T15:20:40.446Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>分类</title>
-    <link href="http://yoursite.com/2020/03/17/categories/index/"/>
-    <id>http://yoursite.com/2020/03/17/categories/index/</id>
-    <published>2020-03-17T15:20:40.446Z</published>
-    <updated>2020-03-17T15:20:40.446Z</updated>
-    
-    <content type="html"><![CDATA[<h1 id="测试用的"><a href="#测试用的" class="headerlink" title="测试用的"></a>测试用的</h1>]]></content>
+    <content type="html"><![CDATA[<h1 id="正则表达式的使用"><a href="#正则表达式的使用" class="headerlink" title="正则表达式的使用"></a>正则表达式的使用</h1><blockquote><p>本文整理了一些常用的正则表达式匹配符，使用的示例代码为js编写，参考文章 <a href="https://tool.oschina.net/uploads/apidocs/jquery/regexp.html" target="_blank" rel="noopener">正则表达式手册</a>，[MDN文档-正则表达式]<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expression" target="_blank" rel="noopener">https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expression</a>)</p></blockquote><h2 id="正则表达式规则类型"><a href="#正则表达式规则类型" class="headerlink" title="正则表达式规则类型"></a>正则表达式规则类型</h2><ul><li><p>断言 </p><blockquote><p>表示一个匹配在某些条件发生</p></blockquote></li><li><p>边界</p><blockquote><p>表示行和单词的的开始和结尾，如：<code>^ 匹配起始位置</code> ，<code>$ 匹配结束位置</code></p></blockquote></li><li><p>字符类别</p><blockquote><p>区分不同类型的字符，如： <code>\D 匹配一个非数字字符</code>，<code>\d 匹配一个数字字符</code></p></blockquote></li><li><p>组合范围</p><blockquote><p>表示表达式的分组和范围，如: <code>[a-e0-4] 匹配a-e之间的字符以及0-4的数字</code></p></blockquote></li><li><p>量词</p><blockquote><p>表示匹配的字符或表达式的数量， 如： <code>a{3,4} 匹配3个或4个字母a的字符</code></p></blockquote></li><li><p>unicode属性转义</p><blockquote><p>基于unicode字符属性区分字符</p></blockquote></li></ul><h2 id="常用的匹配规则"><a href="#常用的匹配规则" class="headerlink" title="常用的匹配规则"></a>常用的匹配规则</h2><blockquote><p>以下列的是常用匹配规则，完整的匹配规则可参考：<a href="https://tool.oschina.net/uploads/apidocs/jquery/regexp.html" target="_blank" rel="noopener">正则表达式手册</a></p></blockquote> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"> \S     : 匹配任意非空字符</span><br><span class="line"> .      : 匹配 \n 之外的任何字符</span><br><span class="line"> \D     : 匹配一个非数字字符，等价于[^0-9]</span><br><span class="line"> \d     : 匹配个数字字符，等价于[0-9]</span><br><span class="line"> [0-9]  : 匹配一个数字字符</span><br><span class="line"> ^      : 限定字符串的起始字符， 例如  ^a 限定匹配的字符串必须以 a 开头</span><br><span class="line"> $      : 限定字符串的结束字符，例如 b$ 字符串必须以b结束</span><br><span class="line">\w      : 匹配包括下划线的任何单词或数字，等价于[A-Za-z0-9_]</span><br><span class="line">&#123;&#125;      : 匹配指定次数，eg: a&#123;3,6&#125;，最低匹配三个字符a，最高匹配6个字符a</span><br><span class="line">()      : 优先匹配括号中的内容</span><br><span class="line">+       : 至少匹配一次，等价于&#123;1,&#125;</span><br></pre></td></tr></table></figure><h2 id="全局匹配模式"><a href="#全局匹配模式" class="headerlink" title="全局匹配模式"></a>全局匹配模式</h2><blockquote><p>全局匹配模式即在匹配到第一个字符串后，会继续往后检索，直到检索完所有内容</p></blockquote><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const str &#x3D; &#39;123bb456bb789&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 输出 [ &#39;bb&#39;, &#39;bb&#39; ]</span><br><span class="line">console.log(str.match(&#x2F;bb&#x2F;g)) </span><br><span class="line"></span><br><span class="line">const reg &#x3D; new RegExp(&quot;bb&quot;,&quot;g&quot;)</span><br><span class="line">&#x2F;&#x2F; 输出 [ &#39;bb&#39;, index: 3, input: &#39;123bb4567bb89&#39;, groups: undefined ]</span><br><span class="line">console.log(reg.exec(str))</span><br></pre></td></tr></table></figure><h2 id="js-字符串支持正则表达式的方法"><a href="#js-字符串支持正则表达式的方法" class="headerlink" title="js 字符串支持正则表达式的方法"></a>js 字符串支持正则表达式的方法</h2> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">const str &#x3D; &#39;123bb456d789&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; search(reg): 检索与reg相匹配的值</span><br><span class="line">&#x2F;&#x2F; 输出： 3</span><br><span class="line">console.log(str.search(&#x2F;b&#123;2&#125;&#x2F;))  </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; match(reg): 找到一个或多个reg匹配的值</span><br><span class="line">&#x2F;&#x2F; 输出： [ &#39;456&#39;, index: 5, input: &#39;123bb456d789&#39;, groups: undefined ]</span><br><span class="line">console.log(str.match(&#x2F;[4-6]&#123;3&#125;&#x2F;))</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; replace(reg, str): 替换与reg匹配的值为str的内容</span><br><span class="line">&#x2F;&#x2F; 输出： 123bb4561119</span><br><span class="line">console.log(str.replace(&#x2F;d[7-8]&#123;2&#125;&#x2F;, &#39;111&#39;))</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; split(reg, number): 把字符依照reg匹配规则分割，并且返回一个number长度的数组</span><br><span class="line">&#x2F;&#x2F; 输出： [ &#39;123bb&#39;, &#39;d789&#39; ]</span><br><span class="line">console.log(str.split(&#x2F;456&#x2F;, 2))</span><br></pre></td></tr></table></figure><h2 id="js-RegExp对象"><a href="#js-RegExp对象" class="headerlink" title="js RegExp对象"></a>js RegExp对象</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">complie: 编译正则表达式。</span><br><span class="line">exec: 检索字符串中指定的值。返回找到的值，并确定其位置。</span><br><span class="line">test: 检索字符串中指定的值。返回 true 或 false。</span><br></pre></td></tr></table></figure><h2 id="常用的正则表达式"><a href="#常用的正则表达式" class="headerlink" title="常用的正则表达式"></a>常用的正则表达式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 获取网络链接中的某个参数值</span><br><span class="line">&#x2F;&#x2F; gcGetUrlParam（url,params） &#123;</span><br><span class="line">&#x2F;&#x2F;     var reg &#x3D; new RegExp(&quot;(^|&amp;)&quot; + params + &quot;&#x3D;([^&amp;]*)(&amp;|$)&quot;);</span><br><span class="line">&#x2F;&#x2F;     var result &#x3D; url.search.substr(1).match(reg);</span><br><span class="line">&#x2F;&#x2F;     if (result &amp;&amp; result[2]) &#123;</span><br><span class="line">&#x2F;&#x2F;         return result[2];</span><br><span class="line">&#x2F;&#x2F;     &#125;</span><br><span class="line">&#x2F;&#x2F;     return false;</span><br><span class="line">&#x2F;&#x2F; &#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 裁剪xx到xx之间的任意内容</span><br><span class="line">&#x2F;&#x2F; let url &#x3D; https:&#x2F;&#x2F;www.v.qq.com&#x2F;?vid&#x3D;adfadsfds2243&amp;test&#x3D;true</span><br><span class="line">&#x2F;&#x2F; let reg &#x3D; &#x2F;vid&#x3D;(.*?)&amp;&#x2F;</span><br><span class="line">&#x2F;&#x2F; let vid &#x3D; url.match(reg)[1]</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 验证手机号码正则</span><br><span class="line">&#x2F;&#x2F; let reg &#x3D; &#x2F;^1([3-8])(\d&#123;9&#125;)$&#x2F;</span><br><span class="line">&#x2F;&#x2F; let test &#x3D; &#39;13160694978&#39;</span><br><span class="line">&#x2F;&#x2F; let a &#x3D; reg.exec(test)</span><br><span class="line">&#x2F;&#x2F; console.log(a)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 验证邮箱的正则</span><br><span class="line">&#x2F;&#x2F; let reg &#x3D; &#x2F;^((\S|_|-)&#123;2,10&#125;)@(\S&#123;2,6&#125;)(.com)$&#x2F;</span><br><span class="line">&#x2F;&#x2F; let test &#x3D; &#39;some_one@gmail.com&#39;</span><br><span class="line">&#x2F;&#x2F; let a &#x3D; reg.exec(test)</span><br><span class="line">&#x2F;&#x2F; console.log(a)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 匹配任意重复字符</span><br><span class="line">&#x2F;&#x2F; var s &#x3D; &#39;aaabccc11fdsaa&#39;;</span><br><span class="line">&#x2F;&#x2F; var reg &#x3D; &#x2F;(.)\1+&#x2F;g;</span><br><span class="line">&#x2F;&#x2F; console.log(s.match(reg)); &#x2F;&#x2F;[&quot;aaa&quot;, &quot;ccc&quot;, &quot;11&quot;]</span><br></pre></td></tr></table></figure>]]></content>
     
     <summary type="html">
     
       
       
-        &lt;h1 id=&quot;测试用的&quot;&gt;&lt;a href=&quot;#测试用的&quot; class=&quot;headerlink&quot; title=&quot;测试用的&quot;&gt;&lt;/a&gt;测试用的&lt;/h1&gt;
+        &lt;h1 id=&quot;正则表达式的使用&quot;&gt;&lt;a href=&quot;#正则表达式的使用&quot; class=&quot;headerlink&quot; title=&quot;正则表达式的使用&quot;&gt;&lt;/a&gt;正则表达式的使用&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;本文整理了一些常用的正则表达式匹配符，使用的示例代码为js编写，参
       
     
     </summary>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>友情链接</title>
-    <link href="http://yoursite.com/2020/03/17/links/index/"/>
-    <id>http://yoursite.com/2020/03/17/links/index/</id>
-    <published>2020-03-17T15:20:40.446Z</published>
-    <updated>2020-03-17T15:20:40.446Z</updated>
-    
-    <content type="html"><![CDATA[<p>aaaa</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;aaaa&lt;/p&gt;
-
-      
-    
-    </summary>
+      <category term="编程通用" scheme="http://figuriai.github.io/categories/%E7%BC%96%E7%A8%8B%E9%80%9A%E7%94%A8/"/>
     
     
-    
-  </entry>
-  
-  <entry>
-    <title>Repositories</title>
-    <link href="http://yoursite.com/2020/03/17/repository/index/"/>
-    <id>http://yoursite.com/2020/03/17/repository/index/</id>
-    <published>2020-03-17T15:20:40.446Z</published>
-    <updated>2020-03-17T15:20:40.446Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>标签</title>
-    <link href="http://yoursite.com/2020/03/17/tags/index/"/>
-    <id>http://yoursite.com/2020/03/17/tags/index/</id>
-    <published>2020-03-17T15:20:40.446Z</published>
-    <updated>2020-03-17T15:20:40.446Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test4</title>
-    <link href="http://yoursite.com/2020/03/17/test4/"/>
-    <id>http://yoursite.com/2020/03/17/test4/</id>
-    <published>2020-03-17T15:16:56.542Z</published>
-    <updated>2020-03-17T15:17:03.775Z</updated>
-    
-    <content type="html"><![CDATA[<p>aa</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;aa&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test5</title>
-    <link href="http://yoursite.com/2020/03/17/test5/"/>
-    <id>http://yoursite.com/2020/03/17/test5/</id>
-    <published>2020-03-17T15:05:48.919Z</published>
-    <updated>2020-03-17T15:17:07.937Z</updated>
-    
-    <content type="html"><![CDATA[<p>b’b</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;b’b&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test3</title>
-    <link href="http://yoursite.com/2020/03/17/test3/"/>
-    <id>http://yoursite.com/2020/03/17/test3/</id>
-    <published>2020-03-17T14:51:55.042Z</published>
-    <updated>2020-03-17T14:54:42.597Z</updated>
-    
-    <content type="html"><![CDATA[<p>sh </p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;sh &lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test2</title>
-    <link href="http://yoursite.com/2020/03/17/test2/"/>
-    <id>http://yoursite.com/2020/03/17/test2/</id>
-    <published>2020-03-17T14:39:38.646Z</published>
-    <updated>2020-03-17T14:39:38.646Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>test</title>
-    <link href="http://yoursite.com/2020/03/17/test/"/>
-    <id>http://yoursite.com/2020/03/17/test/</id>
-    <published>2020-03-17T14:36:59.133Z</published>
-    <updated>2020-03-17T14:36:59.742Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>Hello World</title>
-    <link href="http://yoursite.com/2020/03/16/hello-world/"/>
-    <id>http://yoursite.com/2020/03/16/hello-world/</id>
-    <published>2020-03-16T10:57:16.318Z</published>
-    <updated>2020-03-16T11:40:59.927Z</updated>
-    
-    <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p><h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br><span class="line">sdfasdfasdfasd</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p><h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p><h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p><h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure><p>More info: <a href="https://hexo.io/docs/one-command-deployment.html" target="_blank" rel="noopener">Deployment</a></p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;Welcome to &lt;a href=&quot;https://hexo.io/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;Hexo&lt;/a&gt;! This is your very first post. Check &lt;a href=&quot;https://hexo.
-      
-    
-    </summary>
-    
-    
-    
-  </entry>
-  
-  <entry>
-    <title>ceshite</title>
-    <link href="http://yoursite.com/2020/03/16/ceshite/"/>
-    <id>http://yoursite.com/2020/03/16/ceshite/</id>
-    <published>2020-03-16T10:57:16.317Z</published>
-    <updated>2020-03-16T10:57:26.823Z</updated>
-    
-    <content type="html"><![CDATA[<p>aa</p>]]></content>
-    
-    <summary type="html">
-    
-      
-      
-        &lt;p&gt;aa&lt;/p&gt;
-
-      
-    
-    </summary>
-    
-    
+      <category term="基础" scheme="http://figuriai.github.io/tags/%E5%9F%BA%E7%A1%80/"/>
     
   </entry>
   
