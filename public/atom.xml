@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://figureai.github.io/"/>
-  <updated>2020-03-21T00:48:50.728Z</updated>
+  <updated>2020-03-23T03:25:10.292Z</updated>
   <id>http://figureai.github.io/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="https://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>关于js的this指向问题</title>
+    <link href="http://figureai.github.io/2020/03/23/%E5%85%B3%E4%BA%8Ejs%E7%9A%84this%E6%8C%87%E9%92%88/"/>
+    <id>http://figureai.github.io/2020/03/23/%E5%85%B3%E4%BA%8Ejs%E7%9A%84this%E6%8C%87%E9%92%88/</id>
+    <published>2020-03-23T03:17:10.000Z</published>
+    <updated>2020-03-23T03:25:10.292Z</updated>
+    
+    <content type="html"><![CDATA[<h1 id="关于js的this指向问题"><a href="#关于js的this指向问题" class="headerlink" title="关于js的this指向问题"></a>关于js的this指向问题</h1><blockquote><p>一直以来对于js的this指针这一块理解都是比较模糊，也有查阅过相关资料，但是时间一长又会忘记，所以这篇文章单独记录一下this指针的指向问题，一方面加深记忆，一方面也方便自己查阅</p></blockquote><h2 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h2><blockquote><p>this的指向不是在函数定义的时候确定的，而是在函数调用的时候确定的，换句话说，函数的调用方式决定了this的指向</p></blockquote>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h1 id=&quot;关于js的this指向问题&quot;&gt;&lt;a href=&quot;#关于js的this指向问题&quot; class=&quot;headerlink&quot; title=&quot;关于js的this指向问题&quot;&gt;&lt;/a&gt;关于js的this指向问题&lt;/h1&gt;&lt;blockquote&gt;
+&lt;p&gt;一直以来对于js的this
+      
+    
+    </summary>
+    
+    
+      <category term="JavaScript" scheme="http://figureai.github.io/categories/JavaScript/"/>
+    
+    
+  </entry>
   
   <entry>
     <title>提高github搜索精确度</title>
@@ -41,21 +66,6 @@
       <category term="github" scheme="http://figureai.github.io/tags/github/"/>
     
       <category term="效率" scheme="http://figureai.github.io/tags/%E6%95%88%E7%8E%87/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>关于js的this指针</title>
-    <link href="http://figureai.github.io/2020/03/20/%E5%85%B3%E4%BA%8Ejs%E7%9A%84this%E6%8C%87%E9%92%88/"/>
-    <id>http://figureai.github.io/2020/03/20/%E5%85%B3%E4%BA%8Ejs%E7%9A%84this%E6%8C%87%E9%92%88/</id>
-    <published>2020-03-20T11:37:48.094Z</published>
-    <updated>2020-03-20T11:37:48.094Z</updated>
-    
-    <summary type="html">
-    
-    </summary>
-    
-    
     
   </entry>
   
