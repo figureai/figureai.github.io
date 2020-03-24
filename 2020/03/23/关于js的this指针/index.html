@@ -18,16 +18,16 @@
   
   
   <title>关于js的this指向问题 | 懒惰的程序员</title>
-  <meta name="description" content="关于js的this指向问题 一直以来对于js的this指针这一块理解都是比较模糊，也有查阅过相关资料，但是时间一长又会忘记，所以这篇文章单独记录一下this指针的指向问题，一方面加深记忆，一方面也方便自己查阅  要点 this的指向不是在函数定义的时候确定的，而是在函数调用的时候确定的，换句话说，函数的调用方式决定了this的指向，所以理解this的指向问题，最简单的方法就是通过分析js几种函数的">
+  <meta name="description" content="[toc] 关于 js 的 this 指向问题 一直以来对于 js 的 this 指针这一块理解都是比较模糊，也有查阅过相关资料，但是时间一长又会忘记，所以这篇文章单独记录一下 this 指针的指向问题，一方面加深记忆，一方面也方便自己查阅  要点 this 的指向不是在函数定义的时候确定的，而是在函数调用的时候确定的，换句话说，函数的调用方式决定了 this 的指向，所以理解 this 的指向问">
 <meta property="og:type" content="article">
 <meta property="og:title" content="关于js的this指向问题">
 <meta property="og:url" content="http://figureai.github.io/2020/03/23/%E5%85%B3%E4%BA%8Ejs%E7%9A%84this%E6%8C%87%E9%92%88/index.html">
 <meta property="og:site_name" content="MyPage">
-<meta property="og:description" content="关于js的this指向问题 一直以来对于js的this指针这一块理解都是比较模糊，也有查阅过相关资料，但是时间一长又会忘记，所以这篇文章单独记录一下this指针的指向问题，一方面加深记忆，一方面也方便自己查阅  要点 this的指向不是在函数定义的时候确定的，而是在函数调用的时候确定的，换句话说，函数的调用方式决定了this的指向，所以理解this的指向问题，最简单的方法就是通过分析js几种函数的">
+<meta property="og:description" content="[toc] 关于 js 的 this 指向问题 一直以来对于 js 的 this 指针这一块理解都是比较模糊，也有查阅过相关资料，但是时间一长又会忘记，所以这篇文章单独记录一下 this 指针的指向问题，一方面加深记忆，一方面也方便自己查阅  要点 this 的指向不是在函数定义的时候确定的，而是在函数调用的时候确定的，换句话说，函数的调用方式决定了 this 的指向，所以理解 this 的指向问">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://tva1.sinaimg.cn/large/00831rSTgy1gd42s9x2hrj30ht03kdg1.jpg">
 <meta property="article:published_time" content="2020-03-23T03:17:10.000Z">
-<meta property="article:modified_time" content="2020-03-24T06:09:05.000Z">
+<meta property="article:modified_time" content="2020-03-24T06:46:29.179Z">
 <meta property="article:author" content="Figure Ai">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:image" content="https://tva1.sinaimg.cn/large/00831rSTgy1gd42s9x2hrj30ht03kdg1.jpg">
@@ -186,7 +186,7 @@
   <div class="widget">
     <h3 class="widget-title">标签</h3>
     <div class="widget-body">
-      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80/" rel="tag">基础</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%88%E7%8E%87/" rel="tag">效率</a><span class="tag-list-count">1</span></li></ul>
+      <ul class="tag-list" itemprop="keywords"><li class="tag-list-item"><a class="tag-list-link" href="/tags/github/" rel="tag">github</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/js/" rel="tag">js</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E5%9F%BA%E7%A1%80/" rel="tag">基础</a><span class="tag-list-count">1</span></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/%E6%95%88%E7%8E%87/" rel="tag">效率</a><span class="tag-list-count">1</span></li></ul>
     </div>
   </div>
 
@@ -196,7 +196,7 @@
   <div class="widget">
     <h3 class="widget-title">标签云</h3>
     <div class="widget-body tagcloud">
-      <a href="/tags/github/" style="font-size: 13px;">github</a> <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 13px;">基础</a> <a href="/tags/%E6%95%88%E7%8E%87/" style="font-size: 13px;">效率</a>
+      <a href="/tags/github/" style="font-size: 13px;">github</a> <a href="/tags/js/" style="font-size: 13px;">js</a> <a href="/tags/%E5%9F%BA%E7%A1%80/" style="font-size: 13px;">基础</a> <a href="/tags/%E6%95%88%E7%8E%87/" style="font-size: 13px;">效率</a>
     </div>
   </div>
 
@@ -205,7 +205,7 @@
   <div class="widget">
     <h3 class="widget-title">归档</h3>
     <div class="widget-body">
-      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">3</span></li></ul>
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2020/03/">三月 2020</a><span class="archive-list-count">4</span></li></ul>
     </div>
   </div>
 
@@ -217,6 +217,21 @@
     <div class="widget-body">
       <ul class="recent-post-list list-unstyled no-thumbnail">
         
+          <li>
+            
+            <div class="item-inner">
+              <p class="item-category">
+                
+              </p>
+              <p class="item-title">
+                <a href="/2020/03/24/%E6%9C%89%E8%B6%A3%E7%9A%84js%E9%9D%A2%E8%AF%95%E9%A2%98/" class="title">有趣的js笔试题</a>
+              </p>
+              <p class="item-date">
+                <time datetime="2020-03-24T06:27:41.000Z" itemprop="datePublished">2020-03-24</time>
+              </p>
+            </div>
+          </li>
+          
           <li>
             
             <div class="item-inner">
@@ -310,31 +325,35 @@
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <h1 id="关于js的this指向问题"><a href="#关于js的this指向问题" class="headerlink" title="关于js的this指向问题"></a>关于js的this指向问题</h1><blockquote>
-<p>一直以来对于js的this指针这一块理解都是比较模糊，也有查阅过相关资料，但是时间一长又会忘记，所以这篇文章单独记录一下this指针的指向问题，一方面加深记忆，一方面也方便自己查阅</p>
+        <p>[toc]</p>
+<h1 id="关于-js-的-this-指向问题"><a href="#关于-js-的-this-指向问题" class="headerlink" title="关于 js 的 this 指向问题"></a>关于 js 的 this 指向问题</h1><blockquote>
+<p>一直以来对于 js 的 this 指针这一块理解都是比较模糊，也有查阅过相关资料，但是时间一长又会忘记，所以这篇文章单独记录一下 this 指针的指向问题，一方面加深记忆，一方面也方便自己查阅</p>
 </blockquote>
 <h2 id="要点"><a href="#要点" class="headerlink" title="要点"></a>要点</h2><blockquote>
-<p>this的指向不是在函数定义的时候确定的，而是在函数调用的时候确定的，换句话说，函数的调用方式决定了this的指向，所以理解this的指向问题，最简单的方法就是通过分析js几种函数的调用模式。js函数的调用模式有：<strong>函数调用模式</strong>、<strong>方法调用模式</strong>、<strong>构造函数调用模式</strong>、<strong>apply和call调用模式</strong>、<strong>以及箭头函数</strong></p>
+<p>this 的指向不是在函数定义的时候确定的，而是在函数调用的时候确定的，换句话说，函数的调用方式决定了 this 的指向，所以理解 this 的指向问题，最简单的方法就是通过分析 js 几种函数的调用模式。js 函数的调用模式有：<strong>函数调用模式</strong>、<strong>方法调用模式</strong>、<strong>构造函数调用模式</strong>、<strong>apply 和 call 调用模式</strong>、<strong>以及箭头函数</strong></p>
 </blockquote>
 <h2 id="函数调用模式"><a href="#函数调用模式" class="headerlink" title="函数调用模式"></a>函数调用模式</h2><blockquote>
-<p>函数被直接调用时，其实是作为属性挂载在<strong>全局对象下</strong>，所以这种模式<strong>在浏览器环境</strong>下this自然指向<strong>window对象</strong></p>
+<p>函数被直接调用时，其实是作为属性挂载在<strong>全局对象下</strong>，所以这种模式<strong>在浏览器环境</strong>下 this 自然指向<strong>window 对象</strong></p>
 </blockquote>
 <p><img src="https://tva1.sinaimg.cn/large/00831rSTgy1gd42s9x2hrj30ht03kdg1.jpg" alt="函数调用模式下的this指向"></p>
 <h2 id="方法调用模式"><a href="#方法调用模式" class="headerlink" title="方法调用模式"></a>方法调用模式</h2><blockquote>
-<p>当函数被保存为一个对象的属性，通过对象 <strong>.</strong>或者 <strong>[]</strong>调用时，称为方法调用模式，这种情况this被绑定在调用的对象上。</p>
+<p>当函数被保存为一个对象的属性，通过对象 <strong>.</strong>或者 <strong>[]</strong>调用时，称为方法调用模式，这种情况 this 被绑定在调用的对象上。</p>
 </blockquote>
 <ol>
-<li><p>一层嵌套</p>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#x2F;&#x2F; </span><br><span class="line">const dict &#x3D; &#123;</span><br><span class="line">    name: &#39;dict&#39;,</span><br><span class="line">    test: function() &#123;</span><br><span class="line">        console.log(this.name)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 打印 dict</span><br><span class="line">dict.test()</span><br></pre></td></tr></table></figure>
-</li>
-<li><p>对象多重嵌套</p>
-<blockquote>
-<p>这种情况下，不管是嵌套多少层，this都会指向到调用他的对象上</p>
+<li>一层嵌套</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">&#x2F;&#x2F;</span><br><span class="line">const dict &#x3D; &#123;</span><br><span class="line">    name: &#39;dict&#39;,</span><br><span class="line">    test: function() &#123;</span><br><span class="line">        console.log(this.name)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 打印 dict</span><br><span class="line">dict.test()</span><br></pre></td></tr></table></figure>
+
+<ol start="2">
+<li>对象多重嵌套<blockquote>
+<p>这种情况下，不管是嵌套多少层，this 都会指向到调用他的对象上</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const first &#x3D; &#123;</span><br><span class="line">    name: &#39;first&#39;,</span><br><span class="line">    second: &#123;</span><br><span class="line">        name: &#39;second&#39;,</span><br><span class="line">        test: function() &#123;</span><br><span class="line">            console.log(this.name)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 这里因为调用test方法是second对象，所以指向对象是second</span><br><span class="line">first.second.test()</span><br></pre></td></tr></table></figure>
 </li>
-<li><p>方法被赋值为一个新对象</p>
-<blockquote>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">const first &#x3D; &#123;</span><br><span class="line">    name: &#39;first&#39;,</span><br><span class="line">    second: &#123;</span><br><span class="line">        name: &#39;second&#39;,</span><br><span class="line">        test: function() &#123;</span><br><span class="line">            console.log(this.name)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 这里因为调用test方法是second对象，所以指向对象是second</span><br><span class="line">first.second.test()</span><br></pre></td></tr></table></figure>
+
+<ol start="3">
+<li>方法被赋值为一个新对象<blockquote>
 <p>这种情况下相当于回到函数调用模式</p>
 </blockquote>
 </li>
@@ -342,19 +361,20 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line">const first &#x3D; &#123;</span><br><span class="line">    name: &#39;first&#39;,</span><br><span class="line">    second: &#123;</span><br><span class="line">        name: &#39;second&#39;,</span><br><span class="line">        test: function() &#123;</span><br><span class="line">            console.log(this.name)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">name &#x3D; &#39;a&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 打印 a，这里因为a是挂载在全局对象下，所以this自然指向全局对象</span><br><span class="line">const a &#x3D; first.second.test</span><br><span class="line">a()</span><br></pre></td></tr></table></figure>
 
 <h2 id="构造函数调用模式"><a href="#构造函数调用模式" class="headerlink" title="构造函数调用模式"></a>构造函数调用模式</h2><blockquote>
-<p>如果函数在被 new 关键字创建为一个新的实例对象，那么这个函数就成为此对象的构造函数，如果<strong>构造函数不返回对象，this就指向这个实例。</strong></p>
+<p>如果函数在被 new 关键字创建为一个新的实例对象，那么这个函数就成为此对象的构造函数，如果<strong>构造函数不返回对象，this 就指向这个实例。</strong></p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 构造函数不返回对象，this指向实例</span><br><span class="line">function Fn() &#123;</span><br><span class="line">    this.name &#x3D; &#39;hello&#39;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const a &#x3D; new Fn()</span><br><span class="line"></span><br><span class="line">console.log(a.name)</span><br></pre></td></tr></table></figure>
 
-<h2 id="call和apply调用模式"><a href="#call和apply调用模式" class="headerlink" title="call和apply调用模式"></a>call和apply调用模式</h2><blockquote>
-<p>js 中的函数也是对象，所有函数都有两个方法 <strong>call 和 apply</strong>，这两个方法可以让我们构建一个参数数组传递给调用函数，同时也允许我们改变this的指向</p>
+<h2 id="call-和-apply-调用模式"><a href="#call-和-apply-调用模式" class="headerlink" title="call 和 apply 调用模式"></a>call 和 apply 调用模式</h2><blockquote>
+<p>js 中的函数也是对象，所有函数都有两个方法 <strong>call 和 apply</strong>，这两个方法可以让我们构建一个参数数组传递给调用函数，同时也允许我们改变 this 的指向</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">name &#x3D; &#39;window&#39;</span><br><span class="line"></span><br><span class="line">function getName() &#123;</span><br><span class="line">    console.log(this.name)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const a &#x3D; &#123;</span><br><span class="line">    name: &#39;objA&#39;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">getName.apply(a)    &#x2F;&#x2F; objA</span><br><span class="line">getName.call(a)     &#x2F;&#x2F; objA</span><br><span class="line">getName.apply()     &#x2F;&#x2F; window</span><br><span class="line">getName.call()      &#x2F;&#x2F; window</span><br></pre></td></tr></table></figure>
 
 <h2 id="注意"><a href="#注意" class="headerlink" title="注意"></a>注意</h2><blockquote>
-<p>以下代码中是用es6的class定义的一个方法，这段代码在es5的环境下理论上应该是输出 ‘window’，但是实际运行this的指向会变成undefined，猜测应该是es6的class关键字做了优化。</p>
+<p>以下代码中是用 es6 的 class 定义的一个方法，这段代码在 es5 的环境下理论上应该是输出 ‘window’，但是实际运行 this 的指向会变成 undefined，猜测应该是 es6 的 class 关键字做了优化。</p>
 </blockquote>
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; es6</span><br><span class="line">name &#x3D; &#39;window&#39;</span><br><span class="line">class A &#123;</span><br><span class="line">    constructor(name) &#123;</span><br><span class="line">        this.name &#x3D; name</span><br><span class="line">    &#125;</span><br><span class="line">    getName() &#123;</span><br><span class="line">        console.log(this.name)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line">const a &#x3D; new A(&#39;objA&#39;)</span><br><span class="line">const test &#x3D; a.getName</span><br><span class="line">&#x2F;&#x2F; 报错</span><br><span class="line">test()</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; es5</span><br><span class="line">name &#x3D; &#39;window&#39;</span><br><span class="line">function A(name) &#123;</span><br><span class="line">    this.name &#x3D; name</span><br><span class="line">&#125;</span><br><span class="line">A.prototype.getName &#x3D; function() &#123;</span><br><span class="line">    console.log(this.name)</span><br><span class="line">&#125;</span><br><span class="line">const a &#x3D; new A(&#39;objA&#39;)</span><br><span class="line">const test &#x3D; a.getName</span><br><span class="line">&#x2F;&#x2F; 打印window</span><br><span class="line">test()</span><br></pre></td></tr></table></figure>
+
       
     </div>
     <div class="article-footer">
@@ -408,6 +428,10 @@
   <div class="bar-inner">
   
   <ul class="pager pull-left">
+    
+    <li class="prev">
+      <a href="/2020/03/24/%E6%9C%89%E8%B6%A3%E7%9A%84js%E9%9D%A2%E8%AF%95%E9%A2%98/" title="有趣的js笔试题"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+    </li>
     
     
     <li class="next">
