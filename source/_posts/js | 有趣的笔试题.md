@@ -1,5 +1,5 @@
 ---
-title: 有趣的js笔试题
+title: js | 有趣的笔试题
 date: 2020-03-24 14:27:41
 categories:
 tags: [js]
