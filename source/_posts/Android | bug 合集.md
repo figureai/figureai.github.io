@@ -6,8 +6,8 @@ tags: [Android]
 comments: true
 ---
 
-1. You should manually set the same version via DependencyResolution
-> 报错原因： 项目添加的第三方库依赖的版本不一致
+1. 打包时报错 `You should manually set the same version via DependencyResolution`
+   > 报错原因： 项目添加的第三方库依赖的版本不一致
 
 ```
 // 解决方案一 ： 升级Android X
@@ -24,6 +24,19 @@ subprojects {
         }
     }
 }
-
 ```
 
+2. 打包时报错 `Execution failed for task ':app:lintVitalRelease'.`
+
+```
+// app/build.gradle
+android {
+    ...
+    // 增加
+    lintOptions {
+        checkReleaseBuilds false
+    }
+}
+
+
+```
