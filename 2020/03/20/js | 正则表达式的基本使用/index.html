@@ -17,16 +17,16 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>正则表达式的使用 | 惰性程序员</title>
-  <meta name="description" content="正则表达式的使用 本文整理了一些常用的正则表达式匹配符，使用的示例代码为js编写，参考文章 正则表达式手册，MDN文档-正则表达式  正则表达式规则类型 断言   表示一个匹配在某些条件发生   边界  表示行和单词的的开始和结尾，如：^ 匹配起始位置 ，$ 匹配结束位置   字符类别  区分不同类型的字符，如： \D 匹配一个非数字字符，\d 匹配一个数字字符   组合范围  表示表达式的分组和">
+  <title>js | 正则表达式的基本使用 | 惰性程序员</title>
+  <meta name="description" content="正则表达式的使用 本文整理了一些常用的正则表达式匹配符，使用的示例代码为 js 编写，参考文章 正则表达式手册，MDN 文档-正则表达式  正则表达式规则类型 断言  表示一个匹配在某些条件发生   边界  表示行和单词的的开始和结尾，如：^ 匹配起始位置 ，$ 匹配结束位置   字符类别  区分不同类型的字符，如： \D 匹配一个非数字字符，\d 匹配一个数字字符   组合范围  表示表达式的分">
 <meta property="og:type" content="article">
-<meta property="og:title" content="正则表达式的使用">
+<meta property="og:title" content="js | 正则表达式的基本使用">
 <meta property="og:url" content="http://figureai.github.io/2020/03/20/js%20|%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="MyPage">
-<meta property="og:description" content="正则表达式的使用 本文整理了一些常用的正则表达式匹配符，使用的示例代码为js编写，参考文章 正则表达式手册，MDN文档-正则表达式  正则表达式规则类型 断言   表示一个匹配在某些条件发生   边界  表示行和单词的的开始和结尾，如：^ 匹配起始位置 ，$ 匹配结束位置   字符类别  区分不同类型的字符，如： \D 匹配一个非数字字符，\d 匹配一个数字字符   组合范围  表示表达式的分组和">
+<meta property="og:description" content="正则表达式的使用 本文整理了一些常用的正则表达式匹配符，使用的示例代码为 js 编写，参考文章 正则表达式手册，MDN 文档-正则表达式  正则表达式规则类型 断言  表示一个匹配在某些条件发生   边界  表示行和单词的的开始和结尾，如：^ 匹配起始位置 ，$ 匹配结束位置   字符类别  区分不同类型的字符，如： \D 匹配一个非数字字符，\d 匹配一个数字字符   组合范围  表示表达式的分">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-20T06:53:45.000Z">
-<meta property="article:modified_time" content="2020-04-02T05:32:06.201Z">
+<meta property="article:modified_time" content="2020-04-03T05:32:05.689Z">
 <meta property="article:author" content="Figure Ai">
 <meta property="article:tag" content="基础">
 <meta name="twitter:card" content="summary">
@@ -268,7 +268,7 @@
                 <a class="category-link" href="/categories/%E7%AE%97%E6%B3%95/">算法</a>
               </p>
               <p class="item-title">
-                <a href="/2020/03/24/js%20%7C%20%E7%AE%97%E6%B3%95%E9%A2%98/" class="title">算法题</a>
+                <a href="/2020/03/24/js%20%7C%20%E7%AE%97%E6%B3%95%E9%A2%98/" class="title">js | 算法题</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-03-24T07:46:10.000Z" itemprop="datePublished">2020-03-24</time>
@@ -283,7 +283,7 @@
                 
               </p>
               <p class="item-title">
-                <a href="/2020/03/24/js%20%7C%20%E6%9C%89%E8%B6%A3%E7%9A%84%E7%AC%94%E8%AF%95%E9%A2%98/" class="title">有趣的js笔试题</a>
+                <a href="/2020/03/24/js%20%7C%20%E6%9C%89%E8%B6%A3%E7%9A%84%E7%AC%94%E8%AF%95%E9%A2%98/" class="title">js | 有趣的笔试题</a>
               </p>
               <p class="item-date">
                 <time datetime="2020-03-24T06:27:41.000Z" itemprop="datePublished">2020-03-24</time>
@@ -311,7 +311,7 @@
         
   
     <h1 class="article-title" itemprop="name">
-      正则表达式的使用
+      js | 正则表达式的基本使用
     </h1>
   
 
@@ -345,10 +345,10 @@
     <div class="article-entry marked-body" itemprop="articleBody">
       
         <h1 id="正则表达式的使用"><a href="#正则表达式的使用" class="headerlink" title="正则表达式的使用"></a>正则表达式的使用</h1><blockquote>
-<p>本文整理了一些常用的正则表达式匹配符，使用的示例代码为js编写，参考文章 <a href="https://tool.oschina.net/uploads/apidocs/jquery/regexp.html" target="_blank" rel="noopener">正则表达式手册</a>，<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expression" target="_blank" rel="noopener">MDN文档-正则表达式</a></p>
+<p>本文整理了一些常用的正则表达式匹配符，使用的示例代码为 js 编写，参考文章 <a href="https://tool.oschina.net/uploads/apidocs/jquery/regexp.html" target="_blank" rel="noopener">正则表达式手册</a>，<a href="https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Guide/Regular_Expression" target="_blank" rel="noopener">MDN 文档-正则表达式</a></p>
 </blockquote>
 <h2 id="正则表达式规则类型"><a href="#正则表达式规则类型" class="headerlink" title="正则表达式规则类型"></a>正则表达式规则类型</h2><ul>
-<li><p>断言 </p>
+<li><p>断言</p>
 <blockquote>
 <p>表示一个匹配在某些条件发生</p>
 </blockquote>
@@ -373,27 +373,25 @@
 <p>表示匹配的字符或表达式的数量， 如： <code>a{3,4} 匹配3个或4个字母a的字符</code></p>
 </blockquote>
 </li>
-<li><p>unicode属性转义</p>
+<li><p>unicode 属性转义</p>
 <blockquote>
-<p>基于unicode字符属性区分字符</p>
+<p>基于 unicode 字符属性区分字符</p>
 </blockquote>
 </li>
 </ul>
 <h2 id="常用的匹配规则"><a href="#常用的匹配规则" class="headerlink" title="常用的匹配规则"></a>常用的匹配规则</h2><blockquote>
 <p>以下列的是常用匹配规则，完整的匹配规则可参考：<a href="https://tool.oschina.net/uploads/apidocs/jquery/regexp.html" target="_blank" rel="noopener">正则表达式手册</a></p>
 </blockquote>
- <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"> </span><br><span class="line"> \S     : 匹配任意非空字符</span><br><span class="line"> .      : 匹配 \n 之外的任何字符</span><br><span class="line"> \D     : 匹配一个非数字字符，等价于[^0-9]</span><br><span class="line"> \d     : 匹配个数字字符，等价于[0-9]</span><br><span class="line"> [0-9]  : 匹配一个数字字符</span><br><span class="line"> ^      : 限定字符串的起始字符， 例如  ^a 限定匹配的字符串必须以 a 开头</span><br><span class="line"> $      : 限定字符串的结束字符，例如 b$ 字符串必须以b结束</span><br><span class="line">\w      : 匹配包括下划线的任何单词或数字，等价于[A-Za-z0-9_]</span><br><span class="line">&#123;&#125;      : 匹配指定次数，eg: a&#123;3,6&#125;，最低匹配三个字符a，最高匹配6个字符a</span><br><span class="line">()      : 优先匹配括号中的内容</span><br><span class="line">+       : 至少匹配一次，等价于&#123;1,&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">\S     : 匹配任意非空字符</span><br><span class="line">.      : 匹配 \n 之外的任何字符</span><br><span class="line">\D     : 匹配一个非数字字符，等价于[^0-9]</span><br><span class="line">\d     : 匹配个数字字符，等价于[0-9]</span><br><span class="line">[0-9]  : 匹配一个数字字符</span><br><span class="line">^      : 限定字符串的起始字符， 例如  ^a 限定匹配的字符串必须以 a 开头</span><br><span class="line">$      : 限定字符串的结束字符，例如 b$ 字符串必须以b结束</span><br><span class="line">\w      : 匹配包括下划线的任何单词或数字，等价于[A-Za-z0-9_]</span><br><span class="line">&#123;&#125;      : 匹配指定次数，eg: a&#123;3,6&#125;，最低匹配三个字符a，最高匹配6个字符a</span><br><span class="line">()      : 优先匹配括号中的内容</span><br><span class="line">+       : 至少匹配一次，等价于&#123;1,&#125;</span><br></pre></td></tr></table></figure>
 
 <h2 id="全局匹配模式"><a href="#全局匹配模式" class="headerlink" title="全局匹配模式"></a>全局匹配模式</h2><blockquote>
 <p>全局匹配模式即在匹配到第一个字符串后，会继续往后检索，直到检索完所有内容</p>
 </blockquote>
-<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const str &#x3D; &#39;123bb456bb789&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 输出 [ &#39;bb&#39;, &#39;bb&#39; ]</span><br><span class="line">console.log(str.match(&#x2F;bb&#x2F;g)) </span><br><span class="line"></span><br><span class="line">const reg &#x3D; new RegExp(&quot;bb&quot;,&quot;g&quot;)</span><br><span class="line">&#x2F;&#x2F; 输出 [ &#39;bb&#39;, index: 3, input: &#39;123bb4567bb89&#39;, groups: undefined ]</span><br><span class="line">console.log(reg.exec(str))</span><br></pre></td></tr></table></figure>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">const str &#x3D; &#39;123bb456bb789&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 输出 [ &#39;bb&#39;, &#39;bb&#39; ]</span><br><span class="line">console.log(str.match(&#x2F;bb&#x2F;g))</span><br><span class="line"></span><br><span class="line">const reg &#x3D; new RegExp(&quot;bb&quot;,&quot;g&quot;)</span><br><span class="line">&#x2F;&#x2F; 输出 [ &#39;bb&#39;, index: 3, input: &#39;123bb4567bb89&#39;, groups: undefined ]</span><br><span class="line">console.log(reg.exec(str))</span><br></pre></td></tr></table></figure>
 
+<h2 id="js-字符串支持正则表达式的方法"><a href="#js-字符串支持正则表达式的方法" class="headerlink" title="js 字符串支持正则表达式的方法"></a>js 字符串支持正则表达式的方法</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">const str &#x3D; &#39;123bb456d789&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; search(reg): 检索与reg相匹配的值</span><br><span class="line">&#x2F;&#x2F; 输出： 3</span><br><span class="line">console.log(str.search(&#x2F;b&#123;2&#125;&#x2F;))</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; match(reg): 找到一个或多个reg匹配的值</span><br><span class="line">&#x2F;&#x2F; 输出： [ &#39;456&#39;, index: 5, input: &#39;123bb456d789&#39;, groups: undefined ]</span><br><span class="line">console.log(str.match(&#x2F;[4-6]&#123;3&#125;&#x2F;))</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; replace(reg, str): 替换与reg匹配的值为str的内容</span><br><span class="line">&#x2F;&#x2F; 输出： 123bb4561119</span><br><span class="line">console.log(str.replace(&#x2F;d[7-8]&#123;2&#125;&#x2F;, &#39;111&#39;))</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; split(reg, number): 把字符依照reg匹配规则分割，并且返回一个number长度的数组</span><br><span class="line">&#x2F;&#x2F; 输出： [ &#39;123bb&#39;, &#39;d789&#39; ]</span><br><span class="line">console.log(str.split(&#x2F;456&#x2F;, 2))</span><br></pre></td></tr></table></figure>
 
-<h2 id="js-字符串支持正则表达式的方法"><a href="#js-字符串支持正则表达式的方法" class="headerlink" title="js 字符串支持正则表达式的方法"></a>js 字符串支持正则表达式的方法</h2> <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br></pre></td><td class="code"><pre><span class="line">const str &#x3D; &#39;123bb456d789&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; search(reg): 检索与reg相匹配的值</span><br><span class="line">&#x2F;&#x2F; 输出： 3</span><br><span class="line">console.log(str.search(&#x2F;b&#123;2&#125;&#x2F;))  </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; match(reg): 找到一个或多个reg匹配的值</span><br><span class="line">&#x2F;&#x2F; 输出： [ &#39;456&#39;, index: 5, input: &#39;123bb456d789&#39;, groups: undefined ]</span><br><span class="line">console.log(str.match(&#x2F;[4-6]&#123;3&#125;&#x2F;))</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; replace(reg, str): 替换与reg匹配的值为str的内容</span><br><span class="line">&#x2F;&#x2F; 输出： 123bb4561119</span><br><span class="line">console.log(str.replace(&#x2F;d[7-8]&#123;2&#125;&#x2F;, &#39;111&#39;))</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; split(reg, number): 把字符依照reg匹配规则分割，并且返回一个number长度的数组</span><br><span class="line">&#x2F;&#x2F; 输出： [ &#39;123bb&#39;, &#39;d789&#39; ]</span><br><span class="line">console.log(str.split(&#x2F;456&#x2F;, 2))</span><br></pre></td></tr></table></figure>
-
-<h2 id="js-RegExp对象"><a href="#js-RegExp对象" class="headerlink" title="js RegExp对象"></a>js RegExp对象</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">complie: 编译正则表达式。</span><br><span class="line">exec: 检索字符串中指定的值。返回找到的值，并确定其位置。</span><br><span class="line">test: 检索字符串中指定的值。返回 true 或 false。</span><br></pre></td></tr></table></figure>
-
+<h2 id="js-RegExp-对象"><a href="#js-RegExp-对象" class="headerlink" title="js RegExp 对象"></a>js RegExp 对象</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">complie: 编译正则表达式。</span><br><span class="line">exec: 检索字符串中指定的值。返回找到的值，并确定其位置。</span><br><span class="line">test: 检索字符串中指定的值。返回 true 或 false。</span><br></pre></td></tr></table></figure>
 
 <h2 id="常用的正则表达式"><a href="#常用的正则表达式" class="headerlink" title="常用的正则表达式"></a>常用的正则表达式</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 获取网络链接中的某个参数值</span><br><span class="line">&#x2F;&#x2F; gcGetUrlParam（url,params） &#123;</span><br><span class="line">&#x2F;&#x2F;     var reg &#x3D; new RegExp(&quot;(^|&amp;)&quot; + params + &quot;&#x3D;([^&amp;]*)(&amp;|$)&quot;);</span><br><span class="line">&#x2F;&#x2F;     var result &#x3D; url.search.substr(1).match(reg);</span><br><span class="line">&#x2F;&#x2F;     if (result &amp;&amp; result[2]) &#123;</span><br><span class="line">&#x2F;&#x2F;         return result[2];</span><br><span class="line">&#x2F;&#x2F;     &#125;</span><br><span class="line">&#x2F;&#x2F;     return false;</span><br><span class="line">&#x2F;&#x2F; &#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 裁剪xx到xx之间的任意内容</span><br><span class="line">&#x2F;&#x2F; let url &#x3D; https:&#x2F;&#x2F;www.v.qq.com&#x2F;?vid&#x3D;adfadsfds2243&amp;test&#x3D;true</span><br><span class="line">&#x2F;&#x2F; let reg &#x3D; &#x2F;vid&#x3D;(.*?)&amp;&#x2F;</span><br><span class="line">&#x2F;&#x2F; let vid &#x3D; url.match(reg)[1]</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 验证手机号码正则</span><br><span class="line">&#x2F;&#x2F; let reg &#x3D; &#x2F;^1([3-8])(\d&#123;9&#125;)$&#x2F;</span><br><span class="line">&#x2F;&#x2F; let test &#x3D; &#39;13160694978&#39;</span><br><span class="line">&#x2F;&#x2F; let a &#x3D; reg.exec(test)</span><br><span class="line">&#x2F;&#x2F; console.log(a)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 验证邮箱的正则</span><br><span class="line">&#x2F;&#x2F; let reg &#x3D; &#x2F;^((\S|_|-)&#123;2,10&#125;)@(\S&#123;2,6&#125;)(.com)$&#x2F;</span><br><span class="line">&#x2F;&#x2F; let test &#x3D; &#39;some_one@gmail.com&#39;</span><br><span class="line">&#x2F;&#x2F; let a &#x3D; reg.exec(test)</span><br><span class="line">&#x2F;&#x2F; console.log(a)</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 匹配任意重复字符</span><br><span class="line">&#x2F;&#x2F; var s &#x3D; &#39;aaabccc11fdsaa&#39;;</span><br><span class="line">&#x2F;&#x2F; var reg &#x3D; &#x2F;(.)\1+&#x2F;g;</span><br><span class="line">&#x2F;&#x2F; console.log(s.match(reg)); &#x2F;&#x2F;[&quot;aaa&quot;, &quot;ccc&quot;, &quot;11&quot;]</span><br></pre></td></tr></table></figure>
 
@@ -405,7 +403,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://figureai.github.io/2020/03/20/js%20|%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="正则表达式的使用" target="_blank" rel="external">http://figureai.github.io/2020/03/20/js%20|%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</a>
+      <a href="http://figureai.github.io/2020/03/20/js%20|%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="js | 正则表达式的基本使用" target="_blank" rel="external">http://figureai.github.io/2020/03/20/js%20|%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/</a>
     </li>
     
     <li class="post-copyright-license">
