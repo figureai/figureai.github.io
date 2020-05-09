@@ -1,3 +1,10 @@
+---
+title: gitignore忽略规则简单说明
+date: 2020-05-09 17:05:04
+categories: 
+tags: []
+comments: true
+---
 .gitignore忽略规则简单说明
 
 ```
