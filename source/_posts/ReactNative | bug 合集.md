@@ -77,16 +77,14 @@ comments: true
                || (this.props.value === nextProps.value && (nextProps.defaultValue == undefined || nextProps.defaultValue == '' ))
                || (this.props.defaultValue === nextProps.defaultValue && (nextProps.value == undefined || nextProps.value == '' ))
       }
-   ```
-
-
       render() {
          return <TextInput {...this.props} />
       }
+   }
 
-}
+   ```
 
-7. android 打包报错 `Expected a name but was STRING at line 1 column 99 path $[0].apkInfo.versionName`
+6. android 打包报错 `Expected a name but was STRING at line 1 column 99 path $[0].apkInfo.versionName`
    > 把打包路径上的文件夹给删了，然后再打包就好了。
    > 比如我的 apk 是存储在 E:\apk\release 这个路径,然后我就把 release 文件夹给删除了，然后重新打包就好了。
    > 或者你也可以更换一下你的打包路径也可以哦。
