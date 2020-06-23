@@ -18,15 +18,15 @@
   
   
   <title>ReactNative | bug 合集 | 惰性程序员</title>
-  <meta name="description" content="iOS xcode11 以上运行报错 Unknown argument type ‘attribute’ in method -[RCTAppState getCurrentAppState:error:]. Extend RCTConvert to support this type.   &#x2F;&#x2F; 解决方案一： 升级 RN 版本到 0.59.9 以上&#x2F;&#x2F; 解决方案二： [project_fold">
+  <meta name="description" content="iOS xcode11 以上运行报错 Unknown argument type ‘attribute’ in method -[RCTAppState getCurrentAppState:error:]. Extend RCTConvert to support this type.  &#x2F;&#x2F; 解决方案一： 升级 RN 版本到 0.59.9 以上&#x2F;&#x2F; 解决方案二： [project_folde">
 <meta property="og:type" content="article">
 <meta property="og:title" content="ReactNative | bug 合集">
 <meta property="og:url" content="http://figureai.github.io/2020/03/29/ReactNative%20|%20bug%20%E5%90%88%E9%9B%86/index.html">
 <meta property="og:site_name" content="MyPage">
-<meta property="og:description" content="iOS xcode11 以上运行报错 Unknown argument type ‘attribute’ in method -[RCTAppState getCurrentAppState:error:]. Extend RCTConvert to support this type.   &#x2F;&#x2F; 解决方案一： 升级 RN 版本到 0.59.9 以上&#x2F;&#x2F; 解决方案二： [project_fold">
+<meta property="og:description" content="iOS xcode11 以上运行报错 Unknown argument type ‘attribute’ in method -[RCTAppState getCurrentAppState:error:]. Extend RCTConvert to support this type.  &#x2F;&#x2F; 解决方案一： 升级 RN 版本到 0.59.9 以上&#x2F;&#x2F; 解决方案二： [project_folde">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2020-03-29T05:27:39.000Z">
-<meta property="article:modified_time" content="2020-04-03T05:32:08.867Z">
+<meta property="article:modified_time" content="2020-06-23T08:08:37.956Z">
 <meta property="article:author" content="Figure Ai">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
@@ -334,11 +334,45 @@
     <div class="article-entry marked-body" itemprop="articleBody">
       
         <ol>
-<li>iOS xcode11 以上运行报错 <code>Unknown argument type ‘attribute’ in method -[RCTAppState getCurrentAppState:error:]. Extend RCTConvert to support this type.</code></li>
-</ol>
+<li><p>iOS xcode11 以上运行报错 <code>Unknown argument type ‘attribute’ in method -[RCTAppState getCurrentAppState:error:]. Extend RCTConvert to support this type.</code></p>
 <blockquote>
 <p>// 解决方案一： 升级 RN 版本到 0.59.9 以上<br>// 解决方案二： [project_folder]/node_modules/react-native/React/Base/RCTModuleMethod.mm 文件 第 91 行 return RCTReadString(input, “<strong>attribute</strong>((unused))”) || 后面添加<br>RCTReadString(input, “<strong>attribute</strong>((<strong>unused</strong>))”) || 这一行</p>
 </blockquote>
+</li>
+<li><p>Xcode 编译项目时出现 config.h not found</p>
+<blockquote>
+<p>原因：Xcode 文件引用出现问题<br>解决方法：终端项目目录下执行以下两个指令<br>node_modules/react-native/third-party/glog-0.3.4<br>../../scripts/ios-configure-glog.sh</p>
+</blockquote>
+</li>
+<li><p>运行项目突然出现 Make sure you are running a packager server or have included a.bundle file in your application bundle</p>
+<blockquote>
+<p>原因：vpn 开了全局代理，导致找不到项目的 jsbundle 包<br>解决方法：关闭全局代理即可</p>
+</blockquote>
+</li>
+<li><p>终端运行 react-native run-ios 报 could not found iPhone6</p>
+<blockquote>
+<p>原因：Xcode 版本过高，React-Native 版本过低<br>解决方法：</p>
+</blockquote>
+<figure class="highlight plain"><figcaption><span>node_modules/react-native/local-cli/runIOS/findMatchingSimulator.js 文件</span></figcaption><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">if (!version.startsWith(&#39;iOS&#39;) &amp;&amp; !version.startsWith(&#39;tvOS&#39;))</span><br><span class="line">改为</span><br><span class="line">if (!version.startsWith(&#39;com.apple.CoreSimulator.SimRuntime.iOS&#39;) &amp;&amp; !version.startsWith(&#39;com.apple.CoreSimulator.SimRuntime.tvOS&#39;))</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>React-Native 向 Web 页面注入代码，调用 window.postMessage() 出现 Setting onMessage on a WebView overrides existing values of window.postMessage, but a previous value was defined</p>
+<blockquote>
+<p>原因：未知<br>解决方法：</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">render() &#123;</span><br><span class="line">const patchPostMessageFunction &#x3D; function() &#123;</span><br><span class="line">var originalPostMessage &#x3D; window.postMessage;</span><br><span class="line"></span><br><span class="line">            var patchedPostMessage &#x3D; function(message, targetOrigin, transfer) &#123;</span><br><span class="line">            originalPostMessage(message, targetOrigin, transfer);</span><br><span class="line">            &#125;;</span><br><span class="line">            patchedPostMessage.toString &#x3D; function() &#123;</span><br><span class="line">            return String(Object.hasOwnProperty).replace(&#39;hasOwnProperty&#39;, &#39;postMessage&#39;);</span><br><span class="line">            &#125;;</span><br><span class="line"></span><br><span class="line">            window.postMessage &#x3D; patchedPostMessage;</span><br><span class="line">            &#x2F;&#x2F; 这里加入要注入到webview的逻辑</span><br><span class="line"></span><br><span class="line">        &#125;;</span><br><span class="line">        const patchPostMessageJsCode &#x3D; &#39;(&#39; + String(patchPostMessageFunction) + &#39;)();&#39;;</span><br><span class="line"></span><br><span class="line">        return (</span><br><span class="line">            &lt;WebView injectedJavaScript&#x3D;&#123;patchPostMessageJsCode&#125;&#x2F;&gt;</span><br><span class="line">        )</span><br><span class="line">    &#125;</span><br></pre></td></tr></table></figure>
+
+<ol start="6">
+<li>iOS 无法输入中文的问题</li>
+</ol>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">import React, &#123; Component &#125; from &#39;react&#39;</span><br><span class="line">import &#123; Platform, TextInput &#125; from &#39;react-native&#39;</span><br><span class="line"></span><br><span class="line">export default class LLTextInput extends Component &#123;</span><br><span class="line"></span><br><span class="line">   shouldComponentUpdate (nextProps)&#123;</span><br><span class="line">      return Platform.OS !&#x3D;&#x3D; &#39;ios&#39;</span><br><span class="line">            || (this.props.value &#x3D;&#x3D;&#x3D; nextProps.value &amp;&amp; (nextProps.defaultValue &#x3D;&#x3D; undefined || nextProps.defaultValue &#x3D;&#x3D; &#39;&#39; ))</span><br><span class="line">            || (this.props.defaultValue &#x3D;&#x3D;&#x3D; nextProps.defaultValue &amp;&amp; (nextProps.value &#x3D;&#x3D; undefined || nextProps.value &#x3D;&#x3D; &#39;&#39; ))</span><br><span class="line">   &#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ol>
+<pre><code>render() {
+   return &lt;TextInput {...this.props} /&gt;
+}</code></pre><p>}</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 
       
     </div>
