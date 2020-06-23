@@ -17,22 +17,20 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>提高github搜索精确度 | 惰性程序员</title>
-  <meta name="description" content="1234567891011121314151617181920212223&#x2F;&#x2F; xxx 代表搜索内容&#x2F;&#x2F; 在项目名进行精确搜索in:name xxx&#x2F;&#x2F; 搜索名字包含xxx，stars数量大于3000的项目in:name xxx stars:&gt;3000&#x2F;&#x2F; 搜索名字包含xxx，forks大于100的项目in:na">
+  <title>gitignore忽略规则简单说明 | 惰性程序员</title>
+  <meta name="description" content=".gitignore忽略规则简单说明 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950#               表示此为注释,将被Git忽略*.a             表示忽略所有 .a 结尾的文件!lib.a          表示但lib.a除外&amp;#x">
 <meta property="og:type" content="article">
-<meta property="og:title" content="提高github搜索精确度">
-<meta property="og:url" content="http://figureai.github.io/2020/03/21/GitHub%20|%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/index.html">
+<meta property="og:title" content="gitignore忽略规则简单说明">
+<meta property="og:url" content="http://figureai.github.io/2020/05/09/gitignore%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99/index.html">
 <meta property="og:site_name" content="MyPage">
-<meta property="og:description" content="1234567891011121314151617181920212223&#x2F;&#x2F; xxx 代表搜索内容&#x2F;&#x2F; 在项目名进行精确搜索in:name xxx&#x2F;&#x2F; 搜索名字包含xxx，stars数量大于3000的项目in:name xxx stars:&gt;3000&#x2F;&#x2F; 搜索名字包含xxx，forks大于100的项目in:na">
+<meta property="og:description" content=".gitignore忽略规则简单说明 1234567891011121314151617181920212223242526272829303132333435363738394041424344454647484950#               表示此为注释,将被Git忽略*.a             表示忽略所有 .a 结尾的文件!lib.a          表示但lib.a除外&amp;#x">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-21T00:24:58.000Z">
-<meta property="article:modified_time" content="2020-04-02T05:32:06.175Z">
+<meta property="article:published_time" content="2020-05-09T09:05:04.000Z">
+<meta property="article:modified_time" content="2020-06-23T08:43:50.911Z">
 <meta property="article:author" content="Figure Ai">
-<meta property="article:tag" content="github">
-<meta property="article:tag" content="效率">
 <meta name="twitter:card" content="summary">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://figureai.github.io/2020/03/21/GitHub%20|%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/index.html">
+  <link rel="canonical" href="http://figureai.github.io/2020/05/09/gitignore%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99/index.html">
   
     <link rel="alternate" href="/atom.xml" title="MyPage" type="application/atom+xml">
   
@@ -305,14 +303,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-GitHub | 高效搜索方式" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-gitignore文件配置规则" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      提高github搜索精确度
+      gitignore忽略规则简单说明
     </h1>
   
 
@@ -320,32 +318,23 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/03/21/GitHub%20%7C%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/" class="article-date">
-	  <time datetime="2020-03-21T00:24:58.000Z" itemprop="datePublished">2020-03-21</time>
+	<a href="/2020/05/09/gitignore%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99/" class="article-date">
+	  <time datetime="2020-05-09T09:05:04.000Z" itemprop="datePublished">2020-05-09</time>
 	</a>
 </span>
         
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/%E9%AB%98%E6%95%88%E6%93%8D%E4%BD%9C/">高效操作</a>
-  </span>
-
         
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/github/" rel="tag">github</a>, <a class="article-tag-link" href="/tags/%E6%95%88%E7%8E%87/" rel="tag">效率</a>
-  </span>
-
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/03/21/GitHub%20%7C%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/05/09/gitignore%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; xxx 代表搜索内容</span><br><span class="line">&#x2F;&#x2F; 在项目名进行精确搜索</span><br><span class="line">in:name xxx</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索名字包含xxx，stars数量大于3000的项目</span><br><span class="line">in:name xxx stars:&gt;3000</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索名字包含xxx，forks大于100的项目</span><br><span class="line">in:name xxx forks:&gt;100</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索readme包含xxx的项目</span><br><span class="line">in:readme xxx</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索描述包含xxx的项目</span><br><span class="line">in:description xxx</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索xxx语言编写，名字包含xxx的项目</span><br><span class="line">in:name xxx language:xxx</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索最后一次更细时间在2019年9月3日之后的项目</span><br><span class="line">xxx pushed:&gt;2019-09-03</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;</span><br></pre></td></tr></table></figure>
+        <p>.gitignore忽略规则简单说明</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line">#               表示此为注释,将被Git忽略</span><br><span class="line">*.a             表示忽略所有 .a 结尾的文件</span><br><span class="line">!lib.a          表示但lib.a除外</span><br><span class="line">&#x2F;TODO           表示仅仅忽略项目根目录下的 TODO 文件，不包括 subdir&#x2F;TODO</span><br><span class="line">build&#x2F;          表示忽略 build&#x2F;目录下的所有文件，过滤整个build文件夹；</span><br><span class="line">doc&#x2F;*.txt       表示会忽略doc&#x2F;notes.txt但不包括 doc&#x2F;server&#x2F;arch.txt</span><br><span class="line"> </span><br><span class="line">bin&#x2F;:           表示忽略当前路径下的bin文件夹，该文件夹下的所有内容都会被忽略，不忽略 bin 文件</span><br><span class="line">&#x2F;bin:           表示忽略根目录下的bin文件</span><br><span class="line">&#x2F;*.c:           表示忽略cat.c，不忽略 build&#x2F;cat.c</span><br><span class="line">debug&#x2F;*.obj:    表示忽略debug&#x2F;io.obj，不忽略 debug&#x2F;common&#x2F;io.obj和tools&#x2F;debug&#x2F;io.obj</span><br><span class="line">**&#x2F;foo:         表示忽略&#x2F;foo,a&#x2F;foo,a&#x2F;b&#x2F;foo等</span><br><span class="line">a&#x2F;**&#x2F;b:         表示忽略a&#x2F;b, a&#x2F;x&#x2F;b,a&#x2F;x&#x2F;y&#x2F;b等</span><br><span class="line">!&#x2F;bin&#x2F;run.sh    表示不忽略bin目录下的run.sh文件</span><br><span class="line">*.log:          表示忽略所有 .log 文件</span><br><span class="line">config.php:     表示忽略当前路径的 config.php 文件</span><br><span class="line"> </span><br><span class="line">&#x2F;mtk&#x2F;           表示过滤整个文件夹</span><br><span class="line">*.zip           表示过滤所有.zip文件</span><br><span class="line">&#x2F;mtk&#x2F;do.c       表示过滤某个具体文件</span><br><span class="line"> </span><br><span class="line">被过滤掉的文件就不会出现在git仓库中（gitlab或github）了，当然本地库中还有，只是push的时候不会上传。</span><br><span class="line"> </span><br><span class="line">需要注意的是，gitignore还可以指定要将哪些文件添加到版本管理中，如下：</span><br><span class="line">!*.zip</span><br><span class="line">!&#x2F;mtk&#x2F;one.txt</span><br><span class="line"> </span><br><span class="line">唯一的区别就是规则开头多了一个感叹号，Git会将满足这类规则的文件添加到版本管理中。为什么要有两种规则呢？</span><br><span class="line">想象一个场景：假如我们只需要管理&#x2F;mtk&#x2F;目录中的one.txt文件，这个目录中的其他文件都不需要管理，那么.gitignore规则应写为：：</span><br><span class="line">&#x2F;mtk&#x2F;*</span><br><span class="line">!&#x2F;mtk&#x2F;one.txt</span><br><span class="line"> </span><br><span class="line">假设我们只有过滤规则，而没有添加规则，那么我们就需要把&#x2F;mtk&#x2F;目录下除了one.txt以外的所有文件都写出来！</span><br><span class="line">注意上面的&#x2F;mtk&#x2F;*不能写为&#x2F;mtk&#x2F;，否则父目录被前面的规则排除掉了，one.txt文件虽然加了!过滤规则，也不会生效！</span><br><span class="line"> </span><br><span class="line">----------------------------------------------------------------------------------</span><br><span class="line">还有一些规则如下：</span><br><span class="line">fd1&#x2F;*</span><br><span class="line">说明：忽略目录 fd1 下的全部内容；注意，不管是根目录下的 &#x2F;fd1&#x2F; 目录，还是某个子目录 &#x2F;child&#x2F;fd1&#x2F; 目录，都会被忽略；</span><br><span class="line"> </span><br><span class="line">&#x2F;fd1&#x2F;*</span><br><span class="line">说明：忽略根目录下的 &#x2F;fd1&#x2F; 目录的全部内容；</span><br><span class="line"> </span><br><span class="line">&#x2F;*</span><br><span class="line">!.gitignore</span><br><span class="line">!&#x2F;fw&#x2F; </span><br><span class="line">&#x2F;fw&#x2F;*</span><br><span class="line">!&#x2F;fw&#x2F;bin&#x2F;</span><br><span class="line">!&#x2F;fw&#x2F;sf&#x2F;</span><br><span class="line">说明：忽略全部内容，但是不忽略 .gitignore 文件、根目录下的 &#x2F;fw&#x2F;bin&#x2F; 和 &#x2F;fw&#x2F;sf&#x2F; 目录；注意要先对bin&#x2F;的父目录使用!规则，使其不被排除。</span><br></pre></td></tr></table></figure>
       
     </div>
     <div class="article-footer">
@@ -354,7 +343,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://figureai.github.io/2020/03/21/GitHub%20|%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/" title="提高github搜索精确度" target="_blank" rel="external">http://figureai.github.io/2020/03/21/GitHub%20|%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/</a>
+      <a href="http://figureai.github.io/2020/05/09/gitignore%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99/" title="gitignore忽略规则简单说明" target="_blank" rel="external">http://figureai.github.io/2020/05/09/gitignore%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -401,12 +390,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2020/03/23/js%20%7C%20%E5%85%B3%E4%BA%8Ejs%E7%9A%84this%E6%8C%87%E9%92%88/" title="js | 的this指向问题"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2020/05/12/js%20%7C%20%E4%B8%8D%E5%B8%B8%E7%94%A8%E5%87%BD%E6%95%B0%E9%9B%86%E5%90%88/" title="js | 不常用函数集合"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2020/03/20/js%20%7C%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="js | 正则表达式的基本使用"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2020/05/08/redux%E3%80%81react-redux%E3%80%81redux-thunk%E7%BB%93%E5%90%88%E4%BD%BF%E7%94%A8/" title="redux、react-redux、redux-thunk结合使用"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     

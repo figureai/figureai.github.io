@@ -17,22 +17,22 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>提高github搜索精确度 | 惰性程序员</title>
-  <meta name="description" content="1234567891011121314151617181920212223&#x2F;&#x2F; xxx 代表搜索内容&#x2F;&#x2F; 在项目名进行精确搜索in:name xxx&#x2F;&#x2F; 搜索名字包含xxx，stars数量大于3000的项目in:name xxx stars:&gt;3000&#x2F;&#x2F; 搜索名字包含xxx，forks大于100的项目in:na">
+  <title>redux、react-redux、redux-thunk结合使用 | 惰性程序员</title>
+  <meta name="description" content="简单介绍 redux  redux是一个统一数据流状态管理的js库，本身使用与react、或者vue框架等无关。   react-redux  将redux应用到react上的库。   redux-thunk  redux-thunk，redux 的一个中间件，可以实现在使用redux时发异步action。    什么时候需要使用redux 当你的应用有许多动态数据需要在不同的页面共享时，比如说当">
 <meta property="og:type" content="article">
-<meta property="og:title" content="提高github搜索精确度">
-<meta property="og:url" content="http://figureai.github.io/2020/03/21/GitHub%20|%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/index.html">
+<meta property="og:title" content="redux、react-redux、redux-thunk结合使用">
+<meta property="og:url" content="http://figureai.github.io/2020/05/08/redux%E3%80%81react-redux%E3%80%81redux-thunk%E7%BB%93%E5%90%88%E4%BD%BF%E7%94%A8/index.html">
 <meta property="og:site_name" content="MyPage">
-<meta property="og:description" content="1234567891011121314151617181920212223&#x2F;&#x2F; xxx 代表搜索内容&#x2F;&#x2F; 在项目名进行精确搜索in:name xxx&#x2F;&#x2F; 搜索名字包含xxx，stars数量大于3000的项目in:name xxx stars:&gt;3000&#x2F;&#x2F; 搜索名字包含xxx，forks大于100的项目in:na">
+<meta property="og:description" content="简单介绍 redux  redux是一个统一数据流状态管理的js库，本身使用与react、或者vue框架等无关。   react-redux  将redux应用到react上的库。   redux-thunk  redux-thunk，redux 的一个中间件，可以实现在使用redux时发异步action。    什么时候需要使用redux 当你的应用有许多动态数据需要在不同的页面共享时，比如说当">
 <meta property="og:locale" content="zh_CN">
-<meta property="article:published_time" content="2020-03-21T00:24:58.000Z">
-<meta property="article:modified_time" content="2020-04-02T05:32:06.175Z">
+<meta property="og:image" content="https://tva1.sinaimg.cn/large/007S8ZIlgy1gemavjob2pg31400u0npe.gif">
+<meta property="article:published_time" content="2020-05-08T07:27:09.000Z">
+<meta property="article:modified_time" content="2020-06-23T08:43:50.912Z">
 <meta property="article:author" content="Figure Ai">
-<meta property="article:tag" content="github">
-<meta property="article:tag" content="效率">
 <meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://tva1.sinaimg.cn/large/007S8ZIlgy1gemavjob2pg31400u0npe.gif">
   <!-- Canonical links -->
-  <link rel="canonical" href="http://figureai.github.io/2020/03/21/GitHub%20|%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/index.html">
+  <link rel="canonical" href="http://figureai.github.io/2020/05/08/redux%E3%80%81react-redux%E3%80%81redux-thunk%E7%BB%93%E5%90%88%E4%BD%BF%E7%94%A8/index.html">
   
     <link rel="alternate" href="/atom.xml" title="MyPage" type="application/atom+xml">
   
@@ -305,14 +305,14 @@
   
 <main class="main" role="main">
   <div class="content">
-  <article id="post-GitHub | 高效搜索方式" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
+  <article id="post-redux、react-redux、redux-thunk结合使用" class="article article-type-post" itemscope itemtype="http://schema.org/BlogPosting">
     
     <div class="article-header">
       
         
   
     <h1 class="article-title" itemprop="name">
-      提高github搜索精确度
+      redux、react-redux、redux-thunk结合使用
     </h1>
   
 
@@ -320,32 +320,106 @@
       <div class="article-meta">
         <span class="article-date">
     <i class="icon icon-calendar-check"></i>
-	<a href="/2020/03/21/GitHub%20%7C%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/" class="article-date">
-	  <time datetime="2020-03-21T00:24:58.000Z" itemprop="datePublished">2020-03-21</time>
+	<a href="/2020/05/08/redux%E3%80%81react-redux%E3%80%81redux-thunk%E7%BB%93%E5%90%88%E4%BD%BF%E7%94%A8/" class="article-date">
+	  <time datetime="2020-05-08T07:27:09.000Z" itemprop="datePublished">2020-05-08</time>
 	</a>
 </span>
         
-  <span class="article-category">
-    <i class="icon icon-folder"></i>
-    <a class="article-category-link" href="/categories/%E9%AB%98%E6%95%88%E6%93%8D%E4%BD%9C/">高效操作</a>
-  </span>
-
         
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>
-	<a class="article-tag-link" href="/tags/github/" rel="tag">github</a>, <a class="article-tag-link" href="/tags/%E6%95%88%E7%8E%87/" rel="tag">效率</a>
-  </span>
-
 
         
 
-        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/03/21/GitHub%20%7C%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/#comments" class="article-comment-link">评论</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> <a href="/2020/05/08/redux%E3%80%81react-redux%E3%80%81redux-thunk%E7%BB%93%E5%90%88%E4%BD%BF%E7%94%A8/#comments" class="article-comment-link">评论</a></span>
         
       </div>
     </div>
     <div class="article-entry marked-body" itemprop="articleBody">
       
-        <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; xxx 代表搜索内容</span><br><span class="line">&#x2F;&#x2F; 在项目名进行精确搜索</span><br><span class="line">in:name xxx</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索名字包含xxx，stars数量大于3000的项目</span><br><span class="line">in:name xxx stars:&gt;3000</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索名字包含xxx，forks大于100的项目</span><br><span class="line">in:name xxx forks:&gt;100</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索readme包含xxx的项目</span><br><span class="line">in:readme xxx</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索描述包含xxx的项目</span><br><span class="line">in:description xxx</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索xxx语言编写，名字包含xxx的项目</span><br><span class="line">in:name xxx language:xxx</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 搜索最后一次更细时间在2019年9月3日之后的项目</span><br><span class="line">xxx pushed:&gt;2019-09-03</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F;</span><br></pre></td></tr></table></figure>
+        <h2 id="简单介绍"><a href="#简单介绍" class="headerlink" title="简单介绍"></a>简单介绍</h2><ul>
+<li><p>redux</p>
+<blockquote>
+<p>redux是一个统一数据流状态管理的js库，本身使用与react、或者vue框架等无关。</p>
+</blockquote>
+</li>
+<li><p>react-redux</p>
+<blockquote>
+<p>将redux应用到react上的库。</p>
+</blockquote>
+</li>
+<li><p>redux-thunk</p>
+<blockquote>
+<p>redux-thunk，redux 的一个中间件，可以实现在使用redux时发异步action。</p>
+</blockquote>
+</li>
+</ul>
+<h2 id="什么时候需要使用redux"><a href="#什么时候需要使用redux" class="headerlink" title="什么时候需要使用redux"></a>什么时候需要使用redux</h2><blockquote>
+<p>当你的应用有许多动态数据需要在不同的页面共享时，比如说当用户修改了账户昵称之后所有的相关页面都要更新昵称，面对这样的需求，如果不使用redux，则需要通过发送通知或者数据传递的方式来解决，而使用redux则可以大大简化操作。</p>
+</blockquote>
+<h2 id="redux-核心概念"><a href="#redux-核心概念" class="headerlink" title="redux 核心概念"></a>redux 核心概念</h2><ul>
+<li>Store<blockquote>
+<p>Store 是 redux存放数据的地方，每个应用有且只有一个store，比如说修改昵称那个例子，昵称字段（假设为nickName）就需要存放在store中，其他用到的页面也是从store获取，当store中的nickName更新时，所有用到的页面或组件就会自动更新。</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">import &#123;createStore&#125; from &#39;redux&#39;</span><br><span class="line">import rootReducers from &#39;.&#x2F;reducers&#x2F;index&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 创建一个storage </span><br><span class="line">const store &#x3D; createStore(</span><br><span class="line">    rootReducers,</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">export default store</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li><p>Reducer</p>
+<blockquote>
+<p>reducer 是用来计算组成state的纯函数，每个reducer都会接收一个旧的state和action，并且返回一个新的state，需要注意的是，reducer是一个纯函数，固定的输入会得到固定输出，因此要避免在reducer中修改传入的参数，或者使用<code>Date.now()</code>、<code>Math.random()</code>。</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; reducer 接收旧的state和新的action，返回新的state</span><br><span class="line">const counterReducer &#x3D; function(state&#x3D;&#123;count:1&#125;, action) &#123;</span><br><span class="line">    switch(action.type) &#123;</span><br><span class="line">        case &#39;COUNT_ADD&#39;:</span><br><span class="line">            return &#123;...state, count: state.count+1&#125;</span><br><span class="line"></span><br><span class="line">        case &#39;COUNT_REDUCE&#39;:</span><br><span class="line">            return &#123;...state, count: state.count-1&#125;</span><br><span class="line">        default:</span><br><span class="line">            return state</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export default counterReducer</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>Action</p>
+<blockquote>
+<p>如果需要修改state中的数据，就需要通过分发action的方式来修改<code>(Store.dispatch(action))</code>，action包含type和payload字段，type定义了action的类型，payload则是此次action携带的数据。</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; action包含type和payload属性，reducer拿到action可以通过type进行相应的逻辑处理</span><br><span class="line">const addAction &#x3D; () &#x3D;&gt; &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">        type: &#39;COUNTER_ADD&#39;,</span><br><span class="line">        payload: &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">const reduceAction &#x3D; () &#x3D;&gt;&#123;</span><br><span class="line">    return &#123;</span><br><span class="line">        type: &#39;COUNTER_REDUCE&#39;,</span><br><span class="line">        payload: &#123;&#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export &#123;</span><br><span class="line">    addAction,</span><br><span class="line">    reduceAction,</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="redux-设计原则"><a href="#redux-设计原则" class="headerlink" title="redux 设计原则"></a>redux 设计原则</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">1. 单一数据源：所有状态都保存在单一的store中</span><br><span class="line">2. state是只读的: 不能直接对store进行修改,只能通过新的store替换旧的store</span><br><span class="line">3. 使用纯函数来执行修改:reducer是只读的</span><br></pre></td></tr></table></figure>
+
+<p><img src="https://tva1.sinaimg.cn/large/007S8ZIlgy1gemavjob2pg31400u0npe.gif" alt="redux数据流流程图"></p>
+<h2 id="react-redux-的作用"><a href="#react-redux-的作用" class="headerlink" title="react-redux 的作用"></a>react-redux 的作用</h2><blockquote>
+<p>react-redux 能将redux那套逻辑应用在react框架上。</p>
+</blockquote>
+<h3 id="react-redux-核心-api"><a href="#react-redux-核心-api" class="headerlink" title="react-redux 核心 api"></a>react-redux 核心 api</h3><ul>
+<li>Provider<blockquote>
+<p>通过Proveder可以把redux和react建立连接，将store传递到react项目中</p>
+</blockquote>
+</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import React from &#39;react&#39;;</span><br><span class="line">import ReactDOM from &#39;react-dom&#39;;</span><br><span class="line">import App from &#39;.&#x2F;App&#39;;</span><br><span class="line">import store from &#39;.&#x2F;store&#39;</span><br><span class="line">import &#123;Provider&#125; from &#39;react-redux&#39;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">ReactDOM.render(</span><br><span class="line">    &#x2F;&#x2F; 通过Proveder把redux和react建立连接，将store传递到react项目中</span><br><span class="line">    &lt;Provider store&#x3D;&#123;store&#125;&gt;</span><br><span class="line">        &lt;App &#x2F;&gt;</span><br><span class="line">    &lt;&#x2F;Provider&gt;, </span><br><span class="line">    document.getElementById(&#39;root&#39;));</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>connect</li>
+</ul>
+<blockquote>
+<p>使用到store中数据的组件，需要先用connect修饰一遍</p>
+</blockquote>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line">&#x2F;&#x2F; 将 指定 的 store 合并到 props 传给组件</span><br><span class="line">const mapStateToProps &#x3D; (state, ownProps) &#x3D;&gt; &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">        post: state.postReducer</span><br><span class="line">    &#125;</span><br><span class="line">&#125; </span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 将 指定的 dispatch 合并到 props 传给组件</span><br><span class="line">const mapDispatchToProps &#x3D; (dispatch, ownProps) &#x3D;&gt; &#123;</span><br><span class="line">    return &#123;</span><br><span class="line">        test: ()&#x3D;&gt;&#123;</span><br><span class="line">            dispatch(loadPostsAction)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; HomeScreen经过connect 包装就可以使用 mapStateToProps，mapDispatchToProps 传递过去的数据了</span><br><span class="line">export default connect(mapStateToProps, mapDispatchToProps)(HomeScreen)</span><br></pre></td></tr></table></figure>
+
+<h2 id="redux-thunk-的作用"><a href="#redux-thunk-的作用" class="headerlink" title="redux-thunk 的作用"></a>redux-thunk 的作用</h2><blockquote>
+<p>redux-thunk 是 redux的一个中间件，可以实现发异步action，因为有一些action携带的数据可能是由后台获取的，这时候就需要redux-thunk的协助了。</p>
+</blockquote>
+<ul>
+<li><p>使用中间件</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br></pre></td><td class="code"><pre><span class="line">import &#123;createStore, compose, applyMiddleware&#125; from &#39;redux&#39;</span><br><span class="line">import thunk from &#39;redux-thunk&#39;</span><br><span class="line">import rootReducers from &#39;.&#x2F;reducers&#x2F;index&#39;</span><br><span class="line"></span><br><span class="line">&#x2F;&#x2F; 创建一个storage storage 接收一个参数，reducer</span><br><span class="line">const store &#x3D; createStore(</span><br><span class="line">    rootReducers,</span><br><span class="line">    compose(</span><br><span class="line">        applyMiddleware(...[thunk,]),</span><br><span class="line">        window.__REDUX_DEVTOOLS_EXTENSION__ &amp;&amp; window.__REDUX_DEVTOOLS_EXTENSION__(),</span><br><span class="line">    )</span><br><span class="line">)</span><br><span class="line"></span><br><span class="line">export default store</span><br></pre></td></tr></table></figure>
+</li>
+<li><p>发送异步action</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">import &#123;getPosts&#125; from &#39;..&#x2F;services&#x2F;post_api&#39;</span><br><span class="line"></span><br><span class="line">const loadPostsAction &#x3D; async (dispatch)&#x3D;&gt;&#123;</span><br><span class="line">    const &#123;data&#125; &#x3D; await getPosts()</span><br><span class="line">    dispatch(&#123;</span><br><span class="line">        type: &#39;LOAD_POSTS&#39;,</span><br><span class="line">        payload: data</span><br><span class="line">    &#125;)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">export &#123;</span><br><span class="line">    loadPostsAction</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+</li>
+</ul>
+<blockquote>
+<p>本文demo：<a href="https://github.com/figureai/StudyBase/tree/master/redux.base" target="_blank" rel="noopener">redux使用示例</a></p>
+</blockquote>
+<blockquote>
+<p>参考文章：<br>    <a href="https://juejin.im/post/5bac26ad6fb9a05d353c8040" target="_blank" rel="noopener">Redux for react native 指南</a>，<br>    <a href="http://www.ruanyifeng.com/blog/2016/09/redux_tutorial_part_one_basic_usages.html#comment-text" target="_blank" rel="noopener">Redux 入门教程（一）：基本用法</a></p>
+</blockquote>
+
       
     </div>
     <div class="article-footer">
@@ -354,7 +428,7 @@
     
     <li class="post-copyright-link hidden-xs">
       <strong>本文链接：</strong>
-      <a href="http://figureai.github.io/2020/03/21/GitHub%20|%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/" title="提高github搜索精确度" target="_blank" rel="external">http://figureai.github.io/2020/03/21/GitHub%20|%20%E9%AB%98%E6%95%88%E6%90%9C%E7%B4%A2%E6%96%B9%E5%BC%8F/</a>
+      <a href="http://figureai.github.io/2020/05/08/redux%E3%80%81react-redux%E3%80%81redux-thunk%E7%BB%93%E5%90%88%E4%BD%BF%E7%94%A8/" title="redux、react-redux、redux-thunk结合使用" target="_blank" rel="external">http://figureai.github.io/2020/05/08/redux%E3%80%81react-redux%E3%80%81redux-thunk%E7%BB%93%E5%90%88%E4%BD%BF%E7%94%A8/</a>
     </li>
     
     <li class="post-copyright-license">
@@ -401,12 +475,12 @@
   <ul class="pager pull-left">
     
     <li class="prev">
-      <a href="/2020/03/23/js%20%7C%20%E5%85%B3%E4%BA%8Ejs%E7%9A%84this%E6%8C%87%E9%92%88/" title="js | 的this指向问题"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
+      <a href="/2020/05/09/gitignore%E6%96%87%E4%BB%B6%E9%85%8D%E7%BD%AE%E8%A7%84%E5%88%99/" title="gitignore忽略规则简单说明"><i class="icon icon-angle-left" aria-hidden="true"></i><span>&nbsp;&nbsp;上一篇</span></a>
     </li>
     
     
     <li class="next">
-      <a href="/2020/03/20/js%20%7C%20%E6%AD%A3%E5%88%99%E8%A1%A8%E8%BE%BE%E5%BC%8F%E7%9A%84%E5%9F%BA%E6%9C%AC%E4%BD%BF%E7%94%A8/" title="js | 正则表达式的基本使用"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
+      <a href="/2020/03/29/ReactNative%20%7C%20bug%20%E5%90%88%E9%9B%86/" title="ReactNative | bug 合集"><span>下一篇&nbsp;&nbsp;</span><i class="icon icon-angle-right" aria-hidden="true"></i></a>
     </li>
     
     
