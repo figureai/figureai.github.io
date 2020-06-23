@@ -9,14 +9,16 @@ comments: true
 1. iOS xcode11 以上运行报错 `Unknown argument type ‘attribute’ in method -[RCTAppState getCurrentAppState:error:]. Extend RCTConvert to support this type.`
 
    > // 解决方案一： 升级 RN 版本到 0.59.9 以上
-   > // 解决方案二： [project_folder]/node_modules/react-native/React/Base/RCTModuleMethod.mm 文件 第 91 行 return RCTReadString(input, “**attribute**((unused))”) || 后面添加
-   > RCTReadString(input, “**attribute**((**unused**))”) || 这一行
+   > // 解决方案二： `[project_folder]/node_modules/react-native/React/Base/RCTModuleMethod.mm` 文件 第 91 行 `return RCTReadString(input, "__attribute__((unused))") ||`后面添加
+   > `RCTReadString(input, "__attribute__((__unused__))") ||` 这一行
 
 2. Xcode 编译项目时出现 config.h not found
+
    > 原因：Xcode 文件引用出现问题
    > 解决方法：终端项目目录下执行以下两个指令
    > node_modules/react-native/third-party/glog-0.3.4
    > ../../scripts/ios-configure-glog.sh
+
 3. 运行项目突然出现 Make sure you are running a packager server or have included a.bundle file in your application bundle
    > 原因：vpn 开了全局代理，导致找不到项目的 jsbundle 包
    > 解决方法：关闭全局代理即可
@@ -84,6 +86,7 @@ comments: true
 
 }
 
-```
-
-```
+7. android 打包报错 `Expected a name but was STRING at line 1 column 99 path $[0].apkInfo.versionName`
+   > 把打包路径上的文件夹给删了，然后再打包就好了。
+   > 比如我的 apk 是存储在 E:\apk\release 这个路径,然后我就把 release 文件夹给删除了，然后重新打包就好了。
+   > 或者你也可以更换一下你的打包路径也可以哦。
